@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Solution {
+	public static void main(String[] args) {
+   int S, E, W ;
+        Scanner s= new Scanner(System.in);
+        S = s.nextInt();
+        E = s.nextInt();
+        W = s.nextInt();
+        while(S <= E){
+            System.out.print(S);
+        	 System.out.print("\t");
+        	 int cel = (int)((5.0/9)*(S - 32));
+        	 System.out.print(cel);
+             System.out.println();
+        	 S=S+W;     
+        }		
+	}
+
+}
